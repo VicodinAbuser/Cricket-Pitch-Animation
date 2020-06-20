@@ -1,0 +1,94 @@
+body {
+    background-color: #eebb4d;
+}
+
+.pitch {
+    width: 600px;
+    height: 90px;
+    background-color: green;
+    position: relative;
+    margin: 50% auto;
+}
+
+.stumps {
+    display: inline-block;
+    height: 60px;
+    width: 5px;
+    background-color: black;
+    margin: 10px 1px;
+    animation-name: shattered;
+    animation-duration: 2s;
+}
+
+.stump1B {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    height: 60px;
+    width: 5px;
+    background-color: black;
+    margin: 10px 1px;
+}
+
+.stump2B {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    height: 60px;
+    width: 5px;
+    background-color: black;
+    margin: 10px 1px;
+}
+
+.stump3B {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    height: 60px;
+    width: 5px;
+    background-color: black;
+    margin: 10px 1px;
+}
+
+.ball {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 0px;
+    top: -20px;
+    animation-name: bowl;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bowl {
+    50% {
+        right: 50%;
+        top: 50%;
+    }
+
+    100% {
+        right: 98%;
+        top: 10px;
+    }
+}
+
+.crease {
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 150px;
+    background-color: white;
+}
+
+.crease1 {
+    top: -30px;
+    left: 70px;
+}
+
+.crease2 {
+    top: -30px;
+    right: 70px;
+}
